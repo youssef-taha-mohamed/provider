@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
 
-Color primaryColor = Colors.pinkAccent;
+Color primaryColor = Colors.blueAccent;
 String home = '/home';
 String favorites = '/favorites';
 String widget = '/widget';

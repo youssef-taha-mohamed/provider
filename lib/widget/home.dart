@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:y_task/constant.dart';
 import '../widget/builditem.dart';
 import '../widget/drawer.dart';
 
@@ -14,7 +15,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       drawer: const DrawerScreen(),
       appBar: AppBar(
-        backgroundColor: Colors.pinkAccent,
+        backgroundColor: primaryColor,
         title: const Text(
           "Home Page",
           style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),

@@ -9,17 +9,17 @@ class DrawerScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
         child: Drawer(
-          width: MediaQuery.of(context).size.width*.5,
-      backgroundColor: Colors.green.shade500,
+      width: MediaQuery.of(context).size.width * .5,
+      backgroundColor: Colors.white30,
       child: Column(
         children: [
           ListTile(
             onTap: () {
               context.pushReplacement(home);
             },
-            leading: const Icon(
+            leading: Icon(
               Icons.home,
-              color: Colors.black,
+              color: primaryColor,
               size: 40,
             ),
             title: const Text(
@@ -27,16 +27,16 @@ class DrawerScreen extends StatelessWidget {
               style: TextStyle(
                   fontSize: 22,
                   fontWeight: FontWeight.bold,
-                  color: Colors.black),
+                  color: Colors.white),
             ),
           ),
           ListTile(
             onTap: () {
               context.pushReplacement(favorites);
             },
-            leading: const Icon(
+            leading: Icon(
               Icons.favorite,
-              color: Colors.black,
+              color: primaryColor,
               size: 40,
             ),
             title: const Text(
@@ -44,7 +44,7 @@ class DrawerScreen extends StatelessWidget {
               style: TextStyle(
                   fontSize: 22,
                   fontWeight: FontWeight.bold,
-                  color: Colors.black),
+                  color: Colors.white),
             ),
           ),
         ],

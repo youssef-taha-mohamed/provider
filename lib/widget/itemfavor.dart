@@ -24,7 +24,7 @@ class CartList extends StatelessWidget {
           child: ListView.builder(
             itemCount: item.items.length,
             itemBuilder: (context, index) => ListTile(
-              leading: const Icon(Icons.favorite),
+              leading: const Icon(Icons.favorite,color: Colors.white30,),
               title: Text(
                 item.items[index].name,
                 style: const TextStyle(fontSize: 20),

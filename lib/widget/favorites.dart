@@ -13,7 +13,7 @@ class Favorites extends StatelessWidget {
       drawer:const DrawerScreen(),
       appBar: AppBar(
         title:const Text("favorites"),
-        backgroundColor: primaryColor,
+        backgroundColor: Color(0x3E88A5),
       ),
       body: CartList(),
     );
